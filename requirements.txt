@@ -1,0 +1,9 @@
+certifi==2020.12.5
+chardet==4.0.0
+greenlet==1.1.0
+idna==2.10
+PyMySQL==1.0.2
+requests==2.25.1
+riotwatcher @ git+https://github.com/dogzz9445/Riot-Watcher.git@e62a4c7b16ee6de30a197a7ac9eee6abc7ca50ba
+SQLAlchemy==1.4.15
+urllib3==1.26.4

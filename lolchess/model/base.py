@@ -4,9 +4,8 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 
 from .secret import MYSQL_PASSWORD
 
-engine = create_engine('mysql+pymysql://dmjang:'+MYSQL_PASSWORD+'@tzfamily.duckdns.org:33306/lolchess', 
-                        pool_pre_ping=True,
-                        echo=True)
+engine = create_engine('mysql+pymysql://dmjang:'+MYSQL_PASSWORD+'@172.17.0.2:3306/lolchess', 
+                        pool_pre_ping=True)
 _Session = scoped_session(sessionmaker(bind=engine))
 
 Base = declarative_base()

@@ -4,7 +4,6 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install git+https://github.com/dogzz9445/Riot-Watcher.git
 
 COPY . .
 
